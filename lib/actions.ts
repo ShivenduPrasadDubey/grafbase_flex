@@ -18,7 +18,7 @@ export const fetchToken = async () => {
     throw err;
   }
 };
-
+//@ts-ignore
 export const uploadImage = async (imagePath: string) => {
   try {
     const response = await fetch(`${serverUrl}/api/upload`, {
